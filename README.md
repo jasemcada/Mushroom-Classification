@@ -121,6 +121,10 @@ Install all at once:
 pip3 install pandas numpy matplotlib scikit-learn tabulate
 ```
 
+## Data
+
+See **How to Reproduce Results** for download and setup instructions. The dataset is available at [Kaggle](https://www.kaggle.com/datasets/uciml/mushroom-classification).
+
 ### Training
 
 To train the models:
