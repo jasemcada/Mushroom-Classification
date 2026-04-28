@@ -110,3 +110,8 @@ git clone https://github.com/jasemcada/Mushroom-Classification.git
 ## Software Setup
 
 Required packages:
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
+- tabulate
