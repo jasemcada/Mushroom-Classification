@@ -72,3 +72,41 @@ Key metrics: Accuracy, F1 Score, and AUC on held-out test set (1,625 samples)
 **ROC Curve Comparison:**
 
 <img src="roc_comparison.png" width="700"/>
+
+### Conclusions
+
+- Decision Tree and Random Forest classifiers achieve perfect classification on this dataset, confirming that the physical features of mushrooms provide complete separation between edible and poisonous classes
+- **odor** is the single most informative feature, providing near-perfect separation on its own
+- Tree-based methods are the natural choice for this dataset given its categorical nature — decision trees mirror the kind of rule-based reasoning one might use to identify mushrooms in the wild
+- Logistic Regression performs nearly as well despite assuming linear boundaries, suggesting the one-hot encoded features are largely linearly separable
+- Gaussian Naive Bayes performs lowest as it incorrectly assumes Gaussian distributions for binary one-hot encoded features
+
+### Future Work
+
+- Investigate which single feature (likely odor) is sufficient for perfect classification on its own
+- Explore feature importance scores from the Random Forest to formally rank the most predictive features
+- Test on larger and noisier mushroom datasets to see if perfect classification holds
+- Try training without one-hot encoding to see if tree-based methods can handle raw categorical features directly
+
+## How to Reproduce Results
+
+1. Clone this repository:
+```bash
+git clone https://github.com/jasemcada/Mushroom-Classification.git
+```
+2. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/uciml/mushroom-classification) and place `mushrooms.csv` in the repository folder
+3. Install the required packages (see Software Setup below)
+4. Open `Kaggle_Project.ipynb` in Jupyter Notebook or JupyterLab
+5. Run all cells from top to bottom
+
+## Overview of Files in Repository
+
+- `Kaggle_Project.ipynb`: Main project notebook containing all data loading, visualization, cleaning, and ML code
+- `odor_distribution.png`: Bar chart comparing odor distribution between edible and poisonous mushrooms
+- `odor_table.png`: Count table for odor feature broken down by class
+- `roc_comparison.png`: ROC curve comparison across all 4 classifiers
+- `README.md`: This file
+
+## Software Setup
+
+Required packages:
