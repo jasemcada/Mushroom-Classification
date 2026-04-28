@@ -120,22 +120,21 @@ Install all at once:
 ```bash
 pip3 install pandas numpy matplotlib scikit-learn tabulate
 ```
-## Training
 
-- All models were trained using scikit-learn on a standard MacBook
-- Training was near-instant for all classifiers given the small dataset size (8,124 rows)
-- No training curves are applicable as these are non-iterative sklearn classifiers — there are no loss vs epoch curves to report
-- Data was shuffled before splitting to ensure a representative train/test split
-- No significant difficulties were encountered during training
+### Training
 
-## Performance Evaluation
+To train the models:
+1. Ensure you have completed all preprocessing steps in the notebook
+2. Run the Machine Learning section of `Kaggle_Project.ipynb`
+3. All 4 classifiers will be trained automatically using scikit-learn
+4. Training is near-instant on a standard laptop given the small dataset size
 
-To reproduce the performance evaluation:
+### Performance Evaluation
 
-1. Ensure all cells in `Kaggle_Project.ipynb` have been run from top to bottom
-2. Performance metrics (Accuracy, F1 Score, AUC) are displayed in a table at the end of the Machine Learning section
-3. ROC curves for all 4 classifiers are displayed and saved as `roc_comparison.png`
-4. Key metric to focus on is **AUC** — a score of 1.0 indicates perfect classification
+To evaluate performance:
+1. Run all cells in the Machine Learning section after training
+2. A metrics table displaying Accuracy, F1 Score, and AUC will be generated for all 4 classifiers
+3. ROC curves for all classifiers will be displayed and saved as `roc_comparison.png`
 
 ## Citations
 
