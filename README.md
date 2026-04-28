@@ -34,7 +34,7 @@ Feature distributions were compared between edible and poisonous classes using b
 
 **Odor Feature — Count Table:**
 
-<img src="odor_table.png" width="300"/>
+<img src="odor_table.png" width="200"/>
 
 **Odor Feature — Distribution:**
 
