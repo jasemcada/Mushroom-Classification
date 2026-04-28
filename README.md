@@ -40,3 +40,34 @@ Feature distributions were compared between edible and poisonous classes using b
 
 <img src="odor_distribution.png" width="500"/>
 
+### Problem Formulation
+
+- **Input:** 115 binary columns from one-hot encoding of 21 categorical features
+- **Output:** Binary class label (0=edible, 1=poisonous)
+- **Models tried:**
+    - **Decision Tree** — natural fit for categorical rule-based data, highly interpretable. A decision tree mirrors the kind of rule-based reasoning one might use to identify mushrooms in the wild
+    - **Random Forest** — ensemble of decision trees, reduces risk of overfitting
+    - **Logistic Regression** — simple linear baseline classifier
+    - **Gaussian Naive Bayes** — probabilistic classifier, included as a lower baseline since it assumes Gaussian distributions which don't perfectly fit binary one-hot encoded features
+
+### Training
+
+- All models trained using scikit-learn on a standard MacBook
+- Training was near-instant for all classifiers given the small dataset size (8,124 rows)
+- No training curves are applicable as these are non-iterative sklearn classifiers — there are no loss vs epoch curves to report
+- Data was shuffled before splitting to ensure a representative train/test split
+- No significant difficulties were encountered during training
+
+### Performance Comparison
+
+Key metrics: Accuracy, F1 Score, and AUC on held-out test set (1,625 samples)
+
+| Classifier | Accuracy | F1 Score | AUC |
+|---|---|---|---|
+| Decision Tree | 1.0000 | 1.0000 | 1.0000 |
+| Random Forest | 1.0000 | 1.0000 | 1.0000 |
+| Logistic Regression | 0.9994 | 0.9994 | 1.0000 |
+| Gaussian NB | 0.9569 | 0.9568 | 0.9946 |
+
+**ROC Curve Comparison:**
+
