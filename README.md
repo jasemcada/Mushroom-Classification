@@ -22,3 +22,20 @@ The task, as defined by the Kaggle challenge, is to use 23 categorical physical 
 - Dataset was shuffled before splitting to ensure a representative train/test split
 
 ### Data Visualization
+
+Feature distributions were compared between edible and poisonous classes using bar charts and count tables for all 22 features. Key findings:
+
+- **odor** is the strongest separator with poisonous mushrooms concentrating in foul, creosote, and pungent odors while edible mushrooms are mostly odorless or almond/anise scented
+- **spore-print-color**, **gill-color**, and **ring-type** also show strong class separation
+- **bruises**, **stalk-surface-above-ring**, and **stalk-surface-below-ring** show moderate separation
+- **gill-attachment** and **gill-spacing** show minimal differences between classes
+- No numerical outliers exist as all features are categorical
+- Class balance is close to even — 51.8% edible and 48.2% poisonous
+
+**Odor Feature — Count Table:**
+
+![Odor Table](odor_table.png)
+
+**Odor Feature — Distribution:**
+
+![Odor Distribution](odor_distribution.png)
