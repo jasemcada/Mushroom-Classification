@@ -115,3 +115,14 @@ Required packages:
 - matplotlib
 - scikit-learn
 - tabulate
+
+Install all at once:
+```bash
+pip3 install pandas numpy matplotlib scikit-learn tabulate
+```
+
+## Citations
+
+- UCI Machine Learning Repository: Mushroom Data Set. Donated April 1987.
+- Kaggle Dataset: [https://www.kaggle.com/datasets/uciml/mushroom-classification](https://www.kaggle.com/datasets/uciml/mushroom-classification)
+- Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
