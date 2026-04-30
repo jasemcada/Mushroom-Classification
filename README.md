@@ -77,7 +77,7 @@ Key metrics: Accuracy, F1 Score, and AUC on held-out test set (1,625 samples)
 
 - Decision Tree and Random Forest classifiers achieve perfect classification on this dataset, confirming that the physical features of mushrooms provide complete separation between edible and poisonous classes
 - **odor** is the single most informative feature, providing near-perfect separation on its own
-- Tree-based methods are the natural choice for this dataset given its categorical nature — decision trees mirror the kind of rule-based reasoning one might use to identify mushrooms in the wild
+- Tree-based methods are the natural choice for this dataset given its categorical nature. Decision trees mirror the kind of rule-based reasoning one might use to identify mushrooms in the wild
 - Logistic Regression performs nearly as well despite assuming linear boundaries, suggesting the one-hot encoded features are largely linearly separable
 - Gaussian Naive Bayes performs lowest as it incorrectly assumes Gaussian distributions for binary one-hot encoded features
 
