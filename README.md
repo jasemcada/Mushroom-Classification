@@ -16,7 +16,7 @@ The task, as defined by the Kaggle challenge, is to use 23 categorical physical 
 ### Preprocessing / Cleanup
 
 - Dropped `veil-type` feature as it contained only one unique value across all 8,124 samples, making it completely uninformative for any ML model
-- Replaced missing values in `stalk-root` (2,480 entries encoded as `?`) with the most frequent value (mode) as a simple imputation strategy
+- Replaced missing values in `stalk-root` (2,480 entries encoded as `?`) with the mode 
 - Label encoded the target variable (edible=0, poisonous=1)
 - One-hot encoded all 21 remaining categorical features, expanding the dataset from 21 columns to 115 binary columns
 - Dataset was shuffled before splitting to ensure a representative train/test split
