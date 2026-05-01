@@ -12,6 +12,7 @@ The the goal of this project is to use 23 categorical physical characteristics o
 - **Type:** Input: CSV file of 23 categorical features (letter-encoded), Output: binary class label (edible or poisonous)
 - **Size:** 8,124 samples, 22 features + 1 target column
 - **Split:** 6,499 samples for training, 1,625 for testing
+- Class balance is close to even — 51.8% edible and 48.2% poisonous
 
 ### Preprocessing / Cleanup
 
@@ -30,7 +31,6 @@ Feature distributions were compared between edible and poisonous classes using b
 - **bruises**, **stalk-surface-above-ring**, and **stalk-surface-below-ring** show moderate separation
 - **gill-attachment** and **gill-spacing** show minimal differences between classes
 - No numerical outliers exist as all features are categorical
-- Class balance is close to even — 51.8% edible and 48.2% poisonous
 
 **Odor Feature — Count Table:**
 
