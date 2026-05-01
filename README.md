@@ -52,7 +52,7 @@ Feature distributions were compared between edible and poisonous classes using b
 
 ### Training
 
-- All models trained using scikit-learn on a standard MacBook
+- All models trained using scikit-learn
 - Training was near-instant for all classifiers given the small dataset size (8,124 rows)
 - No training curves are applicable as these are non-iterative sklearn classifiers — there are no loss vs epoch curves to report
 - Data was shuffled before splitting to ensure a representative train/test split
